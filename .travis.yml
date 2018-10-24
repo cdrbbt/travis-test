@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "lts/*"
-  
+
 dist: trusty
 sudo: required
 
@@ -11,6 +11,9 @@ addons:
 branches:
   only:
   - master
+
+before_script:
+  - npm install -g @angular/cli
 
 cache:
   directories:
